@@ -12,13 +12,14 @@ module.exports = {
     env: {
       SNOWPACK_PUBLIC_AUTH0_DOMAIN: true,
       SNOWPACK_PUBLIC_AUTH0_CLIENT_ID: true,
+      SNOWPACK_PUBLIC_VERSION: process.env.VERSION ?? Date.now(),
     },
   },
   devOptions: {
     /* ... */
   },
   buildOptions: {
-    baseUrl: '/auth0-webapp/',
+    baseUrl: '/auth0-webapp',
   },
   proxy: {
     /* ... */
