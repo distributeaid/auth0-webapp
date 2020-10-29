@@ -10,7 +10,7 @@ if (root) {
     <Auth0Provider
       domain={import.meta.env.SNOWPACK_PUBLIC_AUTH0_DOMAIN}
       clientId={import.meta.env.SNOWPACK_PUBLIC_AUTH0_CLIENT_ID}
-      redirectUri={window.location.origin}
+      redirectUri={window.location.href}
     >
       <App />
     </Auth0Provider>,
