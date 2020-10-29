@@ -1,27 +1,16 @@
-# New Project
+# auth0 demo webapp
 
-> ✨ Bootstrapped with Create Snowpack App (CSA).
+Built with [snowpack](https://www.snowpack.dev/).
 
-## Available Scripts
+## Configuration
 
-### npm start
+Set up these environment variables:
 
-Runs the app in the development mode.
-Open http://localhost:8080 to view it in the browser.
+    export SNOWPACK_PUBLIC_AUTH0_DOMAIN=<your auth0 domain> # e.g. "distributeaid.eu.auth0.com"
+    export SNOWPACK_PUBLIC_AUTH0_CLIENT_ID=<client ID for this app>
 
-The page will reload if you make edits.
-You will also see any lint errors in the console.
+Run
 
-### npm test
+    npm start
 
-Launches the test runner in the interactive watch mode.
-See the section about running tests for more information.
-
-### npm run build
-
-Builds the app for production to the `build/` folder.
-It correctly bundles Preact in production mode and optimizes the build for the best performance.
-
-### Q: What about Eject?
-
-No eject needed! Snowpack guarantees zero lock-in, and CSA strives for the same.
+to start the development server.

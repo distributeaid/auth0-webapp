@@ -1,10 +1,19 @@
-import { h, render } from 'preact';
-import 'preact/devtools';
-import App from './App.js';
-import './index.css';
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { App } from './App.js';
+import { Auth0Provider } from '@auth0/auth0-react';
 
-const root = document.getElementById('root')
+const root = document.getElementById('root');
 
 if (root) {
-  render(<App />, root);
+  ReactDOM.render(
+    <Auth0Provider
+      domain={import.meta.env.SNOWPACK_PUBLIC_AUTH0_DOMAIN}
+      clientId={import.meta.env.SNOWPACK_PUBLIC_AUTH0_CLIENT_ID}
+      redirectUri={window.location.origin}
+    >
+      <App />
+    </Auth0Provider>,
+    root,
+  );
 }
