@@ -6,10 +6,7 @@ module.exports = {
     src: '/_dist_',
   },
   plugins: ['@snowpack/plugin-react-refresh', '@snowpack/plugin-typescript'],
-  install: [
-    /* ... */
-  ],
-  installOptions: {
+  packageOptions: {
     installTypes: true,
     env: {
       SNOWPACK_PUBLIC_AUTH0_DOMAIN: true,
@@ -17,16 +14,7 @@ module.exports = {
       SNOWPACK_PUBLIC_VERSION: true,
     },
   },
-  devOptions: {
-    /* ... */
-  },
   buildOptions: {
     baseUrl: '/auth0-webapp',
-  },
-  proxy: {
-    /* ... */
-  },
-  alias: {
-    /* ... */
   },
 };
