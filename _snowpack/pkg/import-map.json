@@ -1,0 +1,7 @@
+{
+  "imports": {
+    "@auth0/auth0-react": "./@auth0/auth0-react.js",
+    "react": "./react.js",
+    "react-dom": "./react-dom.js"
+  }
+}
